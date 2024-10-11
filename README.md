@@ -6,7 +6,6 @@ Der Taschenrechner bietet eine benutzerfreundliche Oberfläche, die das Lösen v
 - CSS
 - JavaScript
 - [Math.js](https://mathjs.org/)
-- 
 ## Benutzung
 - Öffne die `index.html`-Datei im Browser.
 - Gib die gewünschten Zahlen und Operationen in die Felder ein und drücke auf „=“.
