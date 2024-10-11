@@ -1,6 +1,5 @@
 # Taschenrechner
 Der Taschenrechner bietet eine benutzerfreundliche Oberfläche, die das Lösen von mathematischen Problemen zum Kinderspiel macht. Mit Funktionen für Grundrechenarten wie Addition, Subtraktion, Multiplikation und Division sowie erweiterten Funktionen wie Potenzen und Wurzeln ermöglicht er präzise Berechnungen in Echtzeit.
-
 ## Technologien
 - HTML
 - CSS
