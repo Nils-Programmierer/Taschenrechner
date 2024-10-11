@@ -1,0 +1,26 @@
+{
+    "theme_color": "#43fa00",
+    "background_color": "#227ea0",
+    "icons": [
+        {
+            "purpose": "maskable",
+            "sizes": "512x512",
+            "src": "icon512_maskable.png",
+            "type": "image/png"
+        },
+        {
+            "purpose": "any",
+            "sizes": "512x512",
+            "src": "icon512_rounded.png",
+            "type": "image/png"
+        }
+    ],
+    "orientation": "portrait",
+    "display": "standalone",
+    "dir": "auto",
+    "lang": "de",
+    "name": "Taschenrechner",
+    "short_name": "Taschenrechner",
+    "start_url": "/index.html",
+    "description": "Der Taschenrechner bietet eine benutzerfreundliche Oberfläche, die das Lösen von mathematischen Problemen zum Kinderspiel macht. Mit Funktionen für Grundrechenarten wie Addition, Subtraktion, Multiplikation und Division sowie erweiterten Funktionen wie Potenzen und Wurzeln ermöglicht er präzise Berechnungen in Echtzeit."
+}
