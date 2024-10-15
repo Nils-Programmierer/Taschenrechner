@@ -25,61 +25,60 @@
     <br>
     <br>
     <br>
-    <div class="invoice">
-
-    </div>
+    <div class="invoice"></div>
     <br>
     <div class="end">
         0
     </div>
 
-
-    
     <div class="container">
         <div class="row">
             <div class="button-wrapper">
-                <button class="buttonDEL" id="buttondelete">DEL</button>
-                <button class="buttondelete" id="buttonC">AC</button>
-                <button class="button0" id="buttonWurzel">√</button>
+                <button class="button0" id="buttonPi" onclick='updateInvoiceText("π");'>π</button>
+                <button class="button0" onclick="DEL();">DEL</button>
+                <button class="buttondelete" onclick="AC();">AC</button>
+                <button class="button0" id="buttonWurzel" onclick='updateInvoiceText("√");'>√</button>
             </div>
             <br>
             <div class="button-wrapper">
-                <button class="button0" id="button(">(</button>
-                <button class="button0" id="button)">)</button>
-                <button class="button0" id="button²">²</button>
-                <button class="button0" id="button/">&divide;</button>
+                <button class="button0" id="button(" onclick='updateInvoiceText("(");'>(</button>
+                <button class="button0" id="button)" onclick='updateInvoiceText(")");'>)</button>
+                <button class="button0" id="button²" onclick='updateInvoiceText("²");'>²</button>
+                <button class="button0" id="button/" onclick='updateInvoiceText("÷");'>&divide;</button>
             </div>
             <br>
             <div class="button-wrapper">
-                <button class="button0" id="button7">7</button>
-                <button class="button0" id="button8">8</button>
-                <button class="button0" id="button9">9</button>
-                <button class="button0" id="button*">&times;</button>
+                <button class="button0" id="button7" onclick='updateInvoiceText("7");'>7</button>
+                <button class="button0" id="button8" onclick='updateInvoiceText("8");'>8</button>
+                <button class="button0" id="button9" onclick='updateInvoiceText("9");'>9</button>
+                <button class="button0" id="button*" onclick='updateInvoiceText("×");'>&times;</button>
             </div>
             <br>
             <div class="button-wrapper">
-                <button class="button0" id="button4">4</button>
-                <button class="button0" id="button5">5</button>
-                <button class="button0" id="button6">6</button>
-                <button class="button0" id="button-">-</button>
+                <button class="button0" id="button4" onclick='updateInvoiceText("4");'>4</button>
+                <button class="button0" id="button5" onclick='updateInvoiceText("5");'>5</button>
+                <button class="button0" id="button6" onclick='updateInvoiceText("6");'>6</button>
+                <button class="button0" id="button-" onclick='updateInvoiceText("-");'>-</button>
             </div>
             <br>
             <div class="button-wrapper">
-                <button class="button0" id="button1">1</button>
-                <button class="button0" id="button2">2</button>
-                <button class="button0" id="button3">3</button>
-                <button class="button0" id="button+">+</button>
+                <button class="button0" id="button1" onclick='updateInvoiceText("1");'>1</button>
+                <button class="button0" id="button2" onclick='updateInvoiceText("2");'>2</button>
+                <button class="button0" id="button3" onclick='updateInvoiceText("3");'>3</button>
+                <button class="button0" id="button+" onclick='updateInvoiceText("+");'>+</button>
             </div>
             <br>
             <div class="button-wrapper">
-                <button class="button0" id="button,">.</button>
-                <button class="button0" id="button0">0</button>
-                <button class="buttongleich" id="button=">=</button>
+                <button class="button0" id="button," onclick='updateInvoiceText(".");'>.</button>
+                <button class="button0" id="button0" onclick='updateInvoiceText("0");'>0</button>
+                <button class="button0" id="buttonAns" onclick='updateInvoiceText("Ans");'>Ans</button>
+                <button class="buttongleich" id="button=" onclick='updateInvoiceText("=");'>=</button>
             </div>
         </div>
     </div>
-    
-    
-    
+
+
+
 </body>
+
 </html>
