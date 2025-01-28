@@ -3,5 +3,5 @@ Der Taschenrechner bietet eine benutzerfreundliche Oberfläche, die das Lösen v
 ## Technologien
 Dieses Projekt verwendet HTML, CSS und JavaScript sowie die Bibliothek [Math.js](https://mathjs.org/).
 ## Benutzung
-- Öffne die `index.html`-Datei im Browser.
+- Öffne die [Website](https://nils-programmierer.github.io/Taschenrechner/)
 - Klicke auf die gewünschten Zahlen und Operatoren und drücke anschließend auf „=“ um ein Ergebnis zu erhalten.
