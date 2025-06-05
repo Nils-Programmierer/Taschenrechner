@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="de">
+<link rel="stylesheet" href="style.css">
+<script defer src="javascript.js"></script>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon512_maskable.png" type="image/x-icon">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formelsammlung | Taschenrechner</title>
+</head>
+
+
+<body>
+    <div class="menu-container">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="index.html">Taschenrechner</a>
+            <a href="formulas.html">Formeln</a>
+            <a href="other.html">Sonstiges</a>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="headline">
+        Formeln
+    </div>
+    <h2>Inhalt:</h2>
+    <ol>
+        <li><a onclick='GoTo("Grundlagen")'>Grundlagen</a></li>
+        <li><a onclick='GoTo("Funktionen")'>Funktionen</a></li>
+        <li><a onclick='GoTo("Geometrie")'>Geometrie</a></li>
+        <li><a onclick='GoTo("Trigonometrie")'>Trigonometrie</a></li>
+        <li><a onclick='GoTo("Daten")'>Daten</a></li>
+        <li><a onclick='GoTo("Wahrscheinlichkeit")'>Wahrscheinlichkeit</a></li>
+        <li><a onclick='GoTo("Primzahlen")'>Primzahlen</a></li>
+    </ol>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+    <h2 id="Grundlagen" class="blue">Grundlagen</h2>
+    <div class="text">
+        <b>Mathematische Zeichen:</b>
+        <br>
+        <table>
+            <tr>
+                <td>=</td>
+                <td>gleich</td>
+            </tr>
+            <tr>
+                <td>&ne;</td>
+                <td>ungleich</td>
+            </tr>
+            <tr>
+                <td>&lt;</td>
+                <td>Kleiner als</td>
+            </tr>
+            <tr>
+                <td>&le;</td>
+                <td>Kleiner gleich</td>
+            </tr>
+            <tr>
+                <td>&gt;</td>
+                <td>Größer als</td>
+            </tr>
+            <tr>
+                <td>&ge;</td>
+                <td>Größer gleich</td>
+            </tr>
+            <tr>
+                <td>&asymp;</td>
+                <td>ungefähr gleich, rund, etwa</td>
+            </tr>
+            <tr>
+                <td>&congdot;</td>
+                <td>entspricht</td>
+            </tr>
+            <tr>
+                <td>&par;</td>
+                <td>parallel</td>
+            </tr>
+            <tr>
+                <td>&#8869;</td>
+                <td>senkrecht zueinander</td>
+            </tr>
+            <tr>
+                <td>&#8734;</td>
+                <td>unendlich</td>
+            </tr>
+            <tr>
+                <td>\</td>
+                <td>ohne</td>
+            </tr>
+            <tr>
+                <td>&#8469;</td>
+                <td>Menge der natürlichen Zahlen</td>
+            </tr>
+            <tr>
+                <td>&#8484;</td>
+                <td>Menge der ganzen Zahlen</td>
+            </tr>
+            <tr>
+                <td>&#8474;</td>
+                <td>Menge der rationalen Zahlen</td>
+            </tr>
+            <tr>
+                <td>&#8477;</td>
+                <td>Menge der reellen Zahlen</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>Definitionsmenge</td>
+            </tr>
+            <tr>
+                <td>L</td>
+                <td>Lösungsmenge</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+    <div class="text">
+        <b>Maßeinheiten:</b>
+        <br>
+        <img src="img/graphics/Maßeinheiten.jpg" alt="Maßeinheiten">
+    </div>
+    <br>
+    <br>
+    <div class="text">
+        <b>Bezeichnungen</b>
+        <br>
+        Addition: a + b
+        <br>
+        → 1. Summand: a
+        <br>
+        → 2. Summand: b
+        <br>
+        → Summe: a + b
+        <br><br>
+
+        Subtraktion: a - b
+        <br>
+        → Minuend: a
+        <br>
+        → Subtrahend: b
+        <br>
+        → Differenz: a - b
+        <br><br>
+
+        Multiplikation: a * b
+        <br>
+        → 1. Faktor: a
+        <br>
+        → 2. Faktor: b
+        <br>
+        → Produkt: a * b
+        <br><br>
+
+        Division: a / b
+        <br>
+        → Dividend: a
+        <br>
+        → Divisor: b
+        <br>
+        → Quotient: a / b
+    </div>
+
+    <br>
+    <br>
+    <div class="text">
+        <b>Rechengesetze:</b>
+        <ul>
+            <li>Kommutativgesetz: a + b = b + a</li>
+            <li>Assoziativgesetz: (a + b) + c = a + (b + c)</li>
+            <li>Distributivgesetz: a * (b + c) = a * b + a * c</li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <div class="text">
+        <b>Binomische Formeln:</b>
+        <ul>
+            <li>(a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup></li>
+            <li>(a - b)<sup>2</sup> = a<sup>2</sup> - 2ab + b<sup>2</sup></li>
+            <li>a<sup>2</sup> - b<sup>2</sup> = (a + b)(a - b)</li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <div class="text">
+        <b>Potenzen:</b>
+        <br>
+        a<sup>n</sup> = a * a * ... * a (n-mal)
+        <br>
+        a = Basis (a &ne; 0)
+        <br>
+        n = Exponent (n &isin; &Zopf;)
+    </div>
+    <br>
+    <br>
+    <div class="text">
+        <b>Potenzgesetze:</b>
+        <br>
+        <ul>
+            <li>a<sup>m</sup> * a<sup>n</sup> = a<sup>m+n</sup></li>
+            <li>a<sup>m</sup> / a<sup>n</sup> = a<sup>m-n</sup></li>
+            <li>a<sup>n</sup> * b<sup>n</sup> = (a * b)<sup>n</sup></li>
+            <li>a<sup>n</sup> / b<sup>n</sup> = (a / b)<sup>n</sup></li>
+            <li>(a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup></li>
+            <li>a<sup>-n</sup> = 1 / a<sup>n</sup></li>
+            <li>a<sup>0</sup> = 1 (außer a = 0)</li>
+        </ul>
+    </div>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 id="Funktionen" class="yellow">Funktionen</h2>
+    <div class="text">
+        <b>Quadratische Funktionen:</b>
+        <br>
+        <b>Allgemeine Form:</b>
+        <br>
+        ax<sup>2</sup> + bx + c
+        <br>
+        <br>
+        Lösung:
+        <br>
+        x<sub>1</sub> = (-b + &radic;(b<sup>2</sup> - 4ac)) / (2a)
+        <br>
+        <br>
+        <b>Normalform:</b>
+        <br>
+        x <sup>2</sup> + bx + c
+        <br>
+        <br>
+        Lösung:
+        <br>
+        x<sub>1,2</sub> = -(b/2) &plusmn; &radic;((b/2)<sup>2</sup> - c)
+        <br>
+        <br>
+        <b>Scheitelform:</b>
+        <br>
+        (x - d)<sup>2</sup> + e
+        <br>
+        Scheitelpunkt: S(d|e)
+    </div>
+
+    <br>
+    <div class="text">
+        <b>Lineare Funktion:</b>
+        <br>
+        mx + c
+        <br>
+        m = Steigung
+        <br>
+        c = y-Achsenabschnitt
+    </div>
+    <br>
+    <div class="text">
+        <b>Steigung m berechnen:</b>
+        <br>
+        m = (y<sub>2</sub> - y<sub>1</sub>) / (x<sub>2</sub> - x<sub>1</sub>)
+    </div>
+    <br>
+    <div class="text">
+        <b>Zueinander senkrechte Gerade:</b>
+        <br>
+        Zwei Geraden g1 und g2 stehen senkrecht aufeinander, wenn für ihre Steigungen m1 und m2 gilt:
+        <br>
+        m1 * m2 = -1
+    </div>
+    <br>
+    <div class="text">
+        <b>Zueinander parallele Gerade:</b>
+        <br>
+        Zwei Geraden g1 und g2 sind parallel, wenn für ihre Steigungen m1 und m2 gilt:
+        <br>
+        m1 = m2
+    </div>
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 id="Geometrie" class="red">Geometrie</h2>
+    <div class="middle">
+        <b>Winkelgrößen:</b>
+    </div>
+    <div class="text">
+        <b>spitzer Winkel:</b>
+        <br>
+        <img src="img/graphics/spitzer Winkel.jpg" alt="spitzer Winkel">
+        <br>
+        0° < &alpha; < 90°
+    </div>
+    <br>
+    <br>
+    <div class="text">
+        <b>rechter Winkel:</b>
+        <br>
+        <img src="img/graphics/rechter Winkel.jpg" alt="rechter Winkel">
+        <br>
+        &alpha; = 90°
+    </div>
+    <br>
+    <br>
+    <div class="text">
+        <b>stumpfer Winkel:</b>
+        <br>
+        <img src="img/graphics/stumpfer Winkel.jpg" alt="stumpfer Winkel">
+        <br>
+        90° < &alpha; < 180°
+    </div>
+    <br>
+    <br>
+    <div class="text">
+        <b>gestreckter Winkel:</b>
+        <br>
+        <img src="img/graphics/gestreckter Winkel.jpg" alt="gestreckter Winkel">
+        <br>
+        &alpha; = 180°
+    </div>
+    <br>
+    <br>
+    <div class="text">
+        <b>überstumpfer Winkel:</b>
+        <br>
+        <img src="img/graphics/überstumpfer Winkel.jpg" alt="überstumpfer Winkel">
+        <br>
+        180° < &alpha; < 360°
+    </div>
+    <br>
+    <br>
+    <div class="text">
+        <b>Vollwinkel:</b>
+        <br>
+        <img src="img/graphics/Vollwinkel.jpg" alt="Vollwinkel">
+        <br>
+        &alpha; = 360°
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+
+    <div class="middle">
+        <b>Winkel an sich schneidenden Geraden:</b>
+    </div>
+    <div class="text">
+        <b>Nebenwinkel:</b>
+        <br>
+        <img src="img/graphics/Nebenwinkel.jpg" alt="Nebenwinkel">
+        <br>
+        &alpha; + &beta; = 180°
+    </div>
+    <br>
+    <br>
+    <div class="text">
+        <b>Scheitelwinkel:</b>
+        <br>
+        <img src="img/graphics/Scheitelwinkel.jpg" alt="Scheitelwinkel">
+        <br>
+        &alpha; = &beta;
+    </div>
+    <br>
+    <br>
+    <div class="text">
+        <b>Stufenwinkel:</b>
+        <br>
+        <img src="img/graphics/Stufenwinkel.jpg" alt="Stufenwinkel">
+        <br>
+        &alpha; = &beta; und &gamma; = &delta;
+        <br>
+        g || h
+    </div>
+    <br>
+    <br>
+    <div class="text">
+        <b>Wechselwinkel:</b>
+        <br>
+        <img src="img/graphics/Wechselwinkel.jpg" alt="Wechselwinkel">
+        <br>
+        &alpha; = &beta; und &gamma; = &delta;
+        <br>
+        g || h
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="middle">
+        <b>Winkelsummen:</b>
+    </div>
+    <div class="text">
+        <b>Dreieck:</b>
+        <br>
+        <img src="img/graphics/Winkelsumme Dreieck.jpg" alt="Dreieck">
+        <br>
+        &alpha; + &beta; + &gamma; = 180°
+    </div>
+    <br>
+    <br>
+    <div class="text">
+        <b>Viereck:</b>
+        <br>
+        <img src="img/graphics/Winkelsumme Viereck.jpg" alt="Viereck">
+        <br>
+        &alpha; + &beta; + &gamma; + &delta; = 360°
+    </div>
+    <br>
+    <br>
+    <div class="text">
+        <b>n-Eck:</b>
+        <br>
+        <img src="img/graphics/Winkelsumme n-Eck.jpg" alt="n-Eck">
+        <br>
+        (n-2) * 180°
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="middle">
+        <b>Flächen:</b>
+    </div>
+    <div class="text">
+        <b>Quadrat:</b>
+        <br>
+        <img src="img/graphics/Quadrat.jpg" alt="Quadrat">
+    </div>
+    <ul>
+        <li>A = a²</li>
+        <li>u = 4a</li>
+        <li>d = a√2</li>
+    </ul>
+    <br>
+    <br>
+    <div class="text">
+        <b>Rechteck:</b>
+        <br>
+        <img src="img/graphics/Rechteck.jpg" alt="Rechteck">
+    </div>
+    <ul>
+        <li>A = a * b</li>
+        <li>u = 2 * (a + b) = 2 * a + 2 * b</li>
+    </ul>
+    <br>
+    <br>
+    <div class="text">
+        <b>Dreieck:</b>
+        <br>
+        <img src="img/graphics/Dreieck.jpg" alt="Dreieck">
+    </div>
+    <ul>
+        <li>A = &frac12; * g * h</li>
+        <li>u = a + b + c</li>
+    </ul>
+    <br>
+    <br>
+    <div class="text">
+        <b>Trapez:</b>
+        <br>
+        <img src="img/graphics/Trapez.jpg" alt="Trapez">
+    </div>
+    <ul>
+        <li>A = &frac12; * (a + c) * h</li>
+        <li>u = a + b + c + d</li>
+    </ul>
+    <br>
+    <br>
+    <div class="text">
+        <b>Parallelogramm:</b>
+        <br>
+        <img src="img/graphics/Parallelogramm.jpg" alt="Parallelogramm">
+    </div>
+    <ul>
+        <li>A = g * h</li>
+        <li>u = 2 * (a + b) = 2 * a + 2 * b</li>
+    </ul>
+    <br>
+    <br>
+    <div class="text">
+        <b>Raute:</b>
+        <br>
+        <img src="img/graphics/Raute.jpg" alt="Raute">
+    </div>
+    <ul>
+        <li>A = &frac12; * e * f</li>
+        <li>u = 4 * a</li>
+    </ul>
+    <br>
+    <br>
+    <div class="text">
+        <b>Drachen:</b>
+        <br>
+        <img src="img/graphics/Drache.jpg" alt="Drachen">
+    </div>
+    <ul>
+        <li>A = &frac12; * e * f</li>
+        <li>u = 2 * (a + b) = 2 * a + 2 * b</li>
+    </ul>
+    <br>
+    <br>
+    <div class="text">
+        <b>Regelmäßiges Sechseck:</b>
+        <br>
+        <img src="img/graphics/Regelmäßiges Sechseck.jpg" alt="Regelmäßiges Sechseck">
+    </div>
+    <ul>
+        <li>A = &frac12; * 3 * a<sup>2</sup> * &radic;3</li>
+        <li>u = 6 * a</li>
+    </ul>
+    <br>
+    <br>
+    <div class="text">
+        <b>Regelmäßiges Vieleck:</b>
+        <br>
+        <img src="img/graphics/Regelmäßiges Vieleck.jpg" alt="Regelmäßiges Vieleck">
+    </div>
+    <ul>
+        <li>A = n * &frac12; * a * h
+        <li>u = n * a</li>
+    </ul>
+    <br>
+    <br>
+    <div class="text">
+        <b>Kreis:</b>
+        <br>
+        <img src="img/graphics/Kreis.jpg" alt="Kreis">
+    </div>
+    <ul>
+        <li>A = &pi; * r<sup>2</sup> = &frac14; * &pi; * d<sup>2</sup></li>
+        <li>u = 2 * &pi; * r = &pi; * d</li>
+    </ul>
+    <br>
+    <br>
+    <div class="text">
+        <b>Kreisausschnitt:</b>
+        <br>
+        <img src="img/graphics/Kreisausschnitt.jpg" alt="Kreisausschnitt">
+    </div>
+    <ul>
+        <li>A = &pi; * r<sup>2</sup> * a / 360 = b * r / 2</li>
+        <li>b = &pi; * r * a / 180</li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <div class="middle">
+        <b>Körper:</b>
+    </div>
+    <div class="text">
+        <b>Würfel:</b>
+        <br>
+        <img src="img/graphics/Würfel.jpg" alt="Würfel">
+    </div>
+    <ul>
+        <li>V = a<sup>3</sup></li>
+        <li>O = 6 * a<sup>2</sup></li>
+        <li>e = a * &radic;3</li>
+    </ul>
+    <br>
+    <div class="text">
+        <b>Quader:</b>
+        <br>
+        <img src="img/graphics/Quader.jpg" alt="Quader">
+    </div>
+    <ul>
+        <li>V = a * b * c</li>
+        <li>O = 2 * a * b + 2 * a * c + 2 * b * c</li>
+        <li>e = &radic;(a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup>)</li>
+    </ul>
+    <br>
+    <div class="text">
+        <b>Prisma:</b>
+        <br>
+        <img src="img/graphics/Prisma.jpg" alt="Prisma">
+    </div>
+    <ul>
+        <li>V = G * h</li>
+        <li>O = 2 * G + M</li>
+        <li>M = u * h</li>
+    </ul>
+    <br>
+    <div class="text">
+        <b>Zylinder:</b>
+        <br>
+        <img src="img/graphics/Zylinder.jpg" alt="Zylinder">
+    </div>
+    <ul>
+        <li>V = &pi; * r<sup>2</sup> * h</li>
+        <li>O = 2 * &pi; * r<sup>2</sup> + 2 * &pi; * r * h</li>
+        <li>M = 2 * &pi; * r * h</li>
+    </ul>
+    <br>
+    <div class="text">
+        <b>Kugel</b>
+        <br>
+        <img src="img/graphics/Kugel.jpg" alt="Kugel">
+    </div>
+    <ul>
+        <li>V = 4&#8260;3 * &pi; * r<sup>3</sup></li>
+        <li>O = 4 * &pi; * r<sup>2</sup></li>
+    </ul>
+    <br>
+    <div class="text">
+        <b>Pyramide quadratisch</b>
+        <br>
+        <img src="img/graphics/Pyramide.jpg" alt="Pyramide quadratisch">
+    </div>
+    <ul>
+        <li>V = &frac13; * a<sup>2</sup> * h</li>
+        <li>O = a<sup>2</sup> + 2 * a * h<sub>s</sub></li>
+        <li>M = 2 * a * h<sub>s</sub></li>
+    </ul>
+    <br>
+    <div class="text">
+        <b>Pyramide n-seitig:</b>
+        <br>
+        <img src="img/graphics/Pyramide n-seitig.jpg" alt="Pyramide n-seitig">
+    </div>
+    <ul>
+        <li>V = &frac13; * n * (a * h<sub>a</sub>) / 2 * h</li>
+        <li>O = n * (a * h<sub>a</sub>) / 2 + n * (a * h<sub>s</sub>) / 2</li>
+        <li>M = n * (a * h<sub>s</sub>) / 2</li>
+    </ul>
+    <br>
+    <div class="text">
+        <b>Pyramide sechsseitig</b>
+        <br>
+        <img src="img/graphics/Pyramide sechseitig.jpg" alt="Pyramide sechsseitig">
+    </div>
+    <ul>
+        <li>V = &frac12; * &radic;(3) * a<sup>2</sup> * h</li>
+        <li>O = 3&#8260;2 * a<sup>2</sup> * &radic;(3) + 3 * a * h<sub>s</sub></li>
+        <li>M = 3 * a * h<sub>s</sub></li>
+    </ul>
+    <br>
+    <div class="text">
+        <b>Kreiskegel:</b>
+        <br>
+        <img src="img/graphics/Kreiskegel.jpg" alt="Kreiskegel">
+    </div>
+    <ul>
+        <li>V = &frac13; * &pi; * r<sup>2</sup> * h</li>
+        <li>O = &pi; * r<sup>2</sup> + &pi; * r * s</li>
+        <li>M = &pi; * r * s</li>
+    </ul>
+
+
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 id="Trigonometrie" class="green">Trigonometrie</h2>
+    <div class="text">
+        <b>Sinus, Kosinus, Tangens:</b>
+        <br>
+        <img src="img/graphics/Winkelfunktionen.jpg" alt="Dreieck">
+    </div>
+    <ul>
+        <li>sin(&alpha;) = Gegenkathete / Hypotenuse</li>
+        <li>sin(&alpha;) = a / c</li>
+    </ul>
+    <br>
+    <ul>
+        <li>cos(&alpha;) = Ankathete / Hypotenuse</li>
+        <li>cos(&alpha;) = b / c</li>
+    </ul>
+    <br>
+    <ul>
+        <li>tan(&alpha;) = Gegenkathete / Ankathete</li>
+        <li>tan(&alpha;) = a / b</li>
+    </ul>
+    <br>
+    <div class="text">
+        <b>Sinusfunktion:</b>
+        <br>
+        <img src="img/graphics/Sinuskurve.jpg" alt="Sinusfunktion">
+    </div>
+    <br>
+    <div class="text">
+        <b>Kosinusfunktion:</b>
+        <br>
+        <img src="img/graphics/Kosinuskurve.jpg" alt="Kosinusfunktion">
+    </div>
+    <br>
+    <div class="text">
+        <b>Tangensfunktion:</b>
+        <br>
+        <img src="img/graphics/Tangensfunktion.png" alt="Tangensfunktion">
+    </div>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 id="Daten" class="purple">Daten</h2>
+    <div class="text">
+        <b>Prozentrechnung:</b>
+        <br>
+        W = G * p%
+    </div>
+    <br>
+    <div class="text">
+        <b>Jahreszinsen:</b>
+        <br>
+        Z = K * p% / 100
+    </div>
+    <br>
+    <div class="text">
+        <b>Tageszinsen:</b>
+        <br>
+        Z = K * p% * t / 360
+    </div>
+    <br>
+    <div class="text">
+        <b>Zinseszinsen:</b>
+        <br>
+        K<sub>n</sub> = K<sub>0</sub> * (1 + p%)<sup>n</sup>
+    </div>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 id="Wahrscheinlichkeit" class="brown">Wahrscheinlichkeit</h2>
+    <div class="text">
+        <b>Ziehen mit Zurücklegen:</b>
+        <br>
+        <img src="img/graphics/Wahrscheinlichkeit mit zurücklegen.jpg" alt="Ziehen mit Zurücklegen">
+    </div>
+    <br>
+    <div class="text">
+        <b>Ziehen ohne Zurücklegen:</b>
+        <br>
+        <img src="img/graphics/Wahrscheinlichkeit ohne zurücklegen.jpg" alt="Ziehen ohne Zurücklegen">
+    </div>
+    <br>
+    <div class="text">
+        <b>Erwartungswert:</b>
+        <br>
+        E = x<sub>1</sub> * p<sub>1</sub> + ... + x<sub>n</sub> * p<sub>n</sub> - Einsatz
+        <br>
+        Beim Glücksspiel gilt auf lange Sicht für den Spieler:
+        <ul>
+            <li>E > 0: Gewinn</li>
+            <li>E < 0: Verlust</li>
+            <li>E = 0: faires Spiel</li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 id="Primzahlen" class="orange">Primzahlen</h2>
+    <div class="text">
+        Eine Primzahl ist eine natürliche Zahl größer 1, die nur zwei Teiler hat: 1 und sich selbst.
+        <br>
+        Die ersten Primzahlen sind:
+        <br>
+        2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+
+
+
+</body>
+
+</html>
